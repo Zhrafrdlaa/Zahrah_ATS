@@ -86,7 +86,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     AppTextField(
                       label: 'Kata Sandi',
                       controller: _passwordController,
-                      hint: 'Contoh: kopi123',
+                      hint: 'Masukkan kata sandi',
                       icon: Icons.lock_outline,
                       isPassword: true,
                       validator: Validators.password,
