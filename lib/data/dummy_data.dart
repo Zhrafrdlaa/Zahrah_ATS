@@ -3,12 +3,10 @@ import 'package:flutter/material.dart';
 import '../models/app_user.dart';
 import '../models/product.dart';
 
-/// Sumber data statis (dummy). Tidak ada backend.
+/// Sumber data statis (dummy)
 class DummyData {
   DummyData._();
 
-  // Foto dari Unsplash (bebas dipakai, lisensi Unsplash).
-  // Untuk menu lain, tempel link gambar (images.unsplash.com/...) pada imageUrl.
   static const String _latteImage =
       'https://images.unsplash.com/photo-1660229496744-1c772fabc06a?fm=jpg&q=70&w=800&auto=format&fit=crop';
   static const String _matchaImage =
