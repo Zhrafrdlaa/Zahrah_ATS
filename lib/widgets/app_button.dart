@@ -11,6 +11,7 @@ class AppButton extends StatelessWidget {
     required this.label,
     required this.onPressed,
     this.icon,
+    this.leading,
     this.isLoading = false,
     this.style = AppButtonStyle.dark,
   });
@@ -18,6 +19,9 @@ class AppButton extends StatelessWidget {
   final String label;
   final VoidCallback? onPressed;
   final IconData? icon;
+
+  /// Widget di sebelah kiri teks 
+  final Widget? leading;
   final bool isLoading;
   final AppButtonStyle style;
 
@@ -57,6 +61,10 @@ class AppButton extends StatelessWidget {
             : Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
+                  if (leading != null) ...[
+                    leading!,
+                    const SizedBox(width: 10),
+                  ],
                   Text(label,
                       style: const TextStyle(
                           fontSize: 15, fontWeight: FontWeight.w700)),

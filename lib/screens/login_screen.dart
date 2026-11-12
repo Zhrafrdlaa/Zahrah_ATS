@@ -9,8 +9,10 @@ import '../viewmodels/auth_viewmodel.dart';
 import '../widgets/app_button.dart';
 import '../widgets/app_snackbar.dart';
 import '../widgets/app_text_field.dart';
+import '../widgets/google_logo.dart';
 
 /// Halaman 2: Login dengan validasi input.
+/// Akun dummy: budi.santoso@email.com / kopi123
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 
@@ -121,7 +123,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     const SizedBox(height: 20),
                     AppButton(
                       label: 'Lanjutkan dengan Google',
-                      icon: Icons.g_mobiledata,
+                      leading: const GoogleLogo(),
                       style: AppButtonStyle.outline,
                       onPressed: () => AppSnackBar.show(
                           context, 'Login Google belum tersedia pada versi demo.'),
